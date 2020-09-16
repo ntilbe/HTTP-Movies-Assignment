@@ -12,13 +12,11 @@ function SavedList({ list }) {
             key={movie.id}
             activeClassName="saved-active"
           >
-            <span className="saved-movie">{movie.title}</span>
+            <h3 className="saved-movie">{movie.title}</h3>
           </NavLink>
         );
       })}
-      <div className="home-button">
-        <Link to="/">Home</Link>
-      </div>
+
     </div>
   );
 }
